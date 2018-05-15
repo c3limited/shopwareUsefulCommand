@@ -1,0 +1,9 @@
+{
+  "name": "c3/shopware-useful-commands",
+  "keywords": ["shopware", "development", "process", "commands", "cli", "plugin"],
+  "description": "Useful CLI commands to support a multi-step development process",
+  "type": "shopware-plugin",
+  "extra": {
+    "installer-name": "C3UsefulCommands"
+  }
+}
