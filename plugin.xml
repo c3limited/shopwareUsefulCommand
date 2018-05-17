@@ -5,11 +5,14 @@
     <label lang="de">Useful Commands</label>
     <label lang="en">Useful Commands</label>
 
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <copyright>(c) by C3</copyright>
     <author>C3</author>
     <compatibility minVersion="5.4.0" />
 
+     <changelog version="1.0.1">
+        <changes lang="en">Added c3:plugins:ensure command that takes files with lists of plugins to install/uninstall. Useful for continuous integration and other automatic deployments</changes>
+    </changelog>
 
     <changelog version="1.0.0">
         <changes lang="en">Command to set host of shop</changes>

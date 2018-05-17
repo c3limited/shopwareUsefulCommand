@@ -2,6 +2,7 @@
 
 namespace C3UsefulCommands;
 
+use C3UsefulCommands\Commands\InstallUninstallPluginsCommand;
 use Shopware\Components\Plugin;
 use Shopware\Components\Plugin\Context\ActivateContext;
 use Shopware\Components\Plugin\Context\InstallContext;
@@ -29,6 +30,7 @@ class C3UsefulCommands extends Plugin
     public function registerCommands(Application $application)
     {
         $application->add(new SetDomainCommand());
+        $application->add(new InstallUninstallPluginsCommand());
     }
 
 }

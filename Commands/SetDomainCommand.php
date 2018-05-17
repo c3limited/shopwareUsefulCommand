@@ -31,12 +31,12 @@ class SetDomainCommand extends ShopwareCommand
             )->addOption(
                 'shopId',
                 'i',
-                InputOption::VALUE_OPTIONAL,
+                InputOption::VALUE_REQUIRED,
                 'ShopId to set domain for.'
             )->addOption(
                 'shopName',
                 null,
-                InputOption::VALUE_OPTIONAL,
+                InputOption::VALUE_REQUIRED,
                 'shopName to set domain for.'
             );
     }
