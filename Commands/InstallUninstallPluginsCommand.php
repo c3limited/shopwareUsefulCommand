@@ -87,6 +87,7 @@ class InstallUninstallPluginsCommand extends ShopwareCommand
     /**
      * Get list of lines from provided filename (relative to base install)
      * If cannot find file, returns empty array
+     * Skips empty lines and those starting with #
      *
      * @param string $filename
      *
@@ -104,7 +105,7 @@ class InstallUninstallPluginsCommand extends ShopwareCommand
         $readList = explode("\n", file_get_contents($fullFilename));
         $list = [];
         foreach ($readList as $entry) {
-            if ($entry != '') {
+            if ($entry != '' && substr($entry, 0, 1) != '#') {
                 $list[] = $entry;
             }
         }
